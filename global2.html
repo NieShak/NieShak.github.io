@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <style>
+            /* Створюємо стилі для батьківського контейнера, що центрує елементи по горизонталі та вертикалі */
+        .centered-container {
+            display: flex;
+            flex-direction: column; /* Розміщуємо елементи зверху вниз */
+            justify-content: center; /* Центруємо елементи по горизонталі */
+            align-items: center; /* Центруємо елементи по вертикалі */
+            height: 100vh; /* Займаємо висоту всього вікна браузера */
+        }
+        #knopka {
+                width: 120px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="global.html">
+                <input id="knopka" type="submit" value="Global">
+            </form>
+            <form action="global3.html">
+                <input id="knopka" type="submit" value="Розширений">
+            </form>
+        </div>
+        <div class="centered-container">
+            <form action="https://www.google.com.ua/search">
+                <input type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Image Search">
+            </form>
+        </div>
+        
+    </body>
+</html>
